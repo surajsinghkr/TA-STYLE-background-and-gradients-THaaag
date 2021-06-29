@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-- design --*/
+
+body{
+    background-color: #20222F;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.6%;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px auto;
+}
+
+.header .heading h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header .heading p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #878FB3;
+    text-transform: capitalize;
+}
+
+.header .button p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #878FB3;
+    text-transform: capitalize;
+}
+
+.header .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16%;
+}
+
+.header .button .toggle{
+    width: 80px;
+    height: auto;
+    border-radius: 16px;
+    background: linear-gradient(to right, #4A96D2, #73CE8C);
+    padding: 1.6%;
+}
+
+.header .button .toggle .switch{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #20222F;
+}
+
+/*-- main -- */
+
+.fab{
+    background: #4A96D2;
+    padding: 4px;
+    color: #20222F;
+    margin-right: 8px;
+    font-size: 16px;
+
+}
+.gradient{
+    height: 8px;
+    background-color: #3390F5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.g-1{
+    background: linear-gradient(to right, #F4C170, #BC5A93);
+}
+
+.g-2{
+    background: #732229;
+}
+
+.dashboard-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-container .dashboard{
+    background: #252B43;
+    width: 22%;
+    height: 240px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+.dashboard-container .dashboard .dashboard-content{
+    padding: 12px;
+}
+
+.dashboard-container .dashboard .dashboard-content .username{
+    font-size: 12px;
+    font-weight: 600;
+    color: #878FB6;
+}
+
+.dashboard-container .dashboard .dashboard-content .p-no{
+    font-size: 64px;
+    margin-top: 24px;
+    font-weight: 900;
+}
+
+.dashboard-container .dashboard .dashboard-content .p-text{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #878FB6;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+}
+
+.dashboard-container .dashboard .dashboard-content .caret{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 24px 0;
+}
+
+.dashboard-container .overview{
+    background-color: #252B43;
+    width: 22%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 24px 0;
+}
+
+.dashboard-container .overview .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    align-items: center;
+}
+
+.dashboard-container .overview .row .p-1{
+    color: #878FB3;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.dashboard-container .overview .row .p-2{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.instagram{
+    color: #B7869B;
+    background: #252B43;
+    font-size: 24px;
+}
+
+.twitter{
+    color:#46A4F2;
+    background: #252B43;
+    font-size: 24px;
+}
+
+.youtube{
+    border-radius: 50%;
+    background: #732229;
+}
+
+.positive{
+    font-size: 16px;
+    font-weight: 600;
+    color: #549D86;
+}
+
+.negative{
+    font-size: 16px;
+    font-weight: 600;
+    color: #732229;
+}
